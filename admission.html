@@ -1,0 +1,423 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+<link rel="shortcut icon" href="bg.jpg"  type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table.tab1
+{
+border-collapse:collapse;
+border: 1px solid
+}
+table.tab1 th
+{
+border-collapse:collapse;
+color:#F0F8FF;
+border: 1px solid
+}
+body {
+background-color:white;
+width:100%;
+text:white;
+
+}
+
+#header{
+background-color:white;
+}
+#logo {
+margin:10px;
+position:relative;
+left:5px;
+}
+#header_right {
+text-color:white;
+position:absolute;
+top:23px;
+left:370px;
+
+}
+.sfield{
+ background-color:white;  
+    border-color:white;
+    border-style:solid;
+	border-radius:04px;
+    height:35px;
+    
+}
+.sbutton{
+background-color:#d915157;
+    height:inherit;
+    border: 1px solid #d91515;  
+    color:#fff;
+    position:relative;
+    margin: 0;
+    height:35px;
+	border-radius:04px;
+	}
+.btn-group .button {
+    background-color:white; 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+
+    display: inline-block;	
+    font-size: 18px;
+    cursor: pointer;
+    float: left;
+}
+
+.btn-group .button:hover {
+    border:2px solid blue;	
+	border-radius:2px;
+	color:blue;
+}
+.BRAND{
+font-family:arial;
+font-size:25px;
+}
+table.tab3
+{
+    border: 1px solid black;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100px;
+  position:ABSOLUTE;
+  TOP:85PX;
+  LEFT:20PX;
+  margin: auto;
+}
+#dots
+{
+position:absolute;
+top:400px;
+left:690px;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 2px;
+  align:center;
+  background-color: black;
+  border-radius: 100%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: blue;
+}
+#line
+{
+position:absolute;
+top:80px;
+left:260px;
+}
+ul{
+list-style-type:none;
+}
+li
+{
+margin:06px;
+}
+li a{
+text-decoration:none;
+color:#fff;
+padding:15px;
+}
+.btn-theme
+{
+color:#fff;
+background-color:#333;
+border-radius:8px;
+width:180px;
+}
+.btn-theme:hover,
+.btn-theme:active,
+.btn-theme:focus
+{
+
+background-color:#000;
+}
+#line1
+{
+position:absolute;
+top:130px;
+left:10px;
+
+}
+hr
+{background-color:blue;
+}
+.FEAT-PHN {
+POSITION:ABSOLUTE;
+TOP:550PX;
+LEFT:330PX;
+}
+
+.star {
+    background-image: url(bal.jpg);
+	
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:480PX;
+	LEFT:550PX;
+}
+.star:hover {
+    background-size: 250px;
+}
+.star1 {
+
+	background-image: url(bg.jpg);
+    background-size: 180px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:480PX;
+	LEFT:750PX;
+}
+.star1:hover {
+    background-size: 230px;
+}
+.star2 {
+
+	background-image: url(suggest3.png);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:480PX;
+	LEFT:950PX;
+}
+.star2:hover {
+    background-size: 250px;
+}
+.star3 {
+
+	background-image: url(logo-media.png);
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:480PX;
+	LEFT:1150PX;
+}
+.star3:hover {
+    background-size: 170px;
+}
+.FEAT {
+POSITION:ABSOLUTE;
+TOP:550PX;
+LEFT:350PX;
+}
+.love{
+position:absolute;
+top:900px;
+left:330px;
+}
+.love1 {
+
+	background-image: url(love.png);
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:800PX;
+	LEFT:1150PX;
+}
+.love1:hover {
+    background-size: 190px;
+}
+.love2 {
+
+	background-image: url(logo-media.png);
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:800PX;
+	LEFT:950PX;
+}
+.love2:hover {
+    background-size: 190px;
+}
+.love3 {
+
+	background-image: url(logo-media.png);
+    background-size: 170px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:800PX;
+	LEFT:750PX;
+}
+.love3:hover {
+    background-size: 210px;
+}
+.love4 {
+
+	background-image: url(love5.png);
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:800PX;
+	LEFT:550PX;
+}
+.love4:hover {
+    background-size: 190px;
+}
+
+#start{
+padding-top:25%;
+}
+
+.flex-container {
+  display: flex;
+  
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+</style>
+</head>
+<title>LPU</title>
+<body>
+<div id="header">
+<a href="page1.html"><img id="logo" src="logo.png" width="100" height="40"></a>
+<div id="header_right"> 
+<table class="tab2">
+<tr>
+<td>
+<div class="btn-group">
+  <a href="contact.html"><button class="button">Contact Us</button></a>
+  <a href="aboutlpu.html"><button class="button">About Us</button></a>
+  <a href="admission.html"><button class="button">Admissions</button></a>
+  <a href="place.html"><button class="button">Placements</button></a>
+  <a href="login.html"><button class="button">Jobs</button></a>
+  <a href="happening.html"><button class="button">Happenings</button></a>
+  </div>
+
+</form>
+</table>
+</div>
+</div>
+
+<div class="slideshow-container">
+<div class="mySlides" style="width:1300px; height: 300px;">
+  <img src="LPU-NEST-2022.jpg" style="width:100%; height:300px;"> 
+</div>
+<div class="mySlides" style="width: 1300px; height: 300px;">
+  <img src="images.jpg" style="width:100%; height:300px;">
+</div>
+<div class="mySlides" style="width: 1300px; height: 300px;">
+  <img src="images (1).jpg" style="width:100%; height:300px;">
+</div>
+</div>
+<div id="dots">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>  
+
+</div>
+
+
+<center>
+<h1 id="start">COURSES AVAILABLE</h1></center>
+<div class="flex-container">
+  <div>
+1)Engineering<br>2)Management<br>3)Applied Medical Sciences<br>4)Computer Applications and IT<br>5)Commerce<br>6)Pharmaceutical<br>
+7)Sciences<br>8)Agriculture<br>9) Economics<br>10)Ayurvedic <br>11)Pharmaceutical Sciences<br>12)Public Administration<br>13)Physiotherapy</div>
+  <div>
+ 14)Microbiology<br>15)Planning<br>16)History<br>17)Forensic Sciences<br>18)Design<br>19)Psychology<br>20)BiochemistrySciences<br>21)
+Interior and Furniture <br>22)Design<br>23)Sociology<br>24)Botany<br>25)Product and Industrial Design<br>26)Geography<br>27)Indian Languages </div>
+  <div>28)Food Technology<br>29)Law<br>30)Physiotherapy<br>
+31)Nutrition and Dietetics<br>32)Hotel Management and Tourism<br>33)Medical Laboratory Sciences<br>34)Biotechnology<br>35)Architecture<br>36)Arts 
+(Humanities)<br>37)Product and Industrial Design<br>38)Geography<br>39)Indian Languages<br>40)Public Administration</div>  
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+</script>
+</body>
+</html>
