@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+<!--
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: black;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 2px;
+  right: 2px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}-->
+table.tab1
+{
+border-collapse:collapse;
+border: 1px solid
+}
+table.tab1 th
+{
+border-collapse:collapse;
+color:#F0F8FF;
+border: 1px solid
+}
+body {
+background-color:white;
+width:100%;
+text:white;
+
+}
+
+#header{
+background-color:white;
+}
+#logo {
+margin:15px;
+position:relative;
+left:10px;
+}
+#header_right {
+text-color:white;
+position:absolute;
+top:23px;
+left:370px;
+
+}
+.sfield{
+ background-color:white;  
+    border-color:white;
+    border-style:solid;
+	border-radius:04px;
+    height:35px;
+    
+}
+.sbutton{
+background-color:#d915157;
+    height:inherit;
+    border: 1px solid #d91515;  
+    color:#fff;
+    position:relative;
+    margin: 0;
+    height:35px;
+	border-radius:04px;
+	}
+.btn-group .button {
+    background-color:white; 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+
+    display: inline-block;	
+    font-size: 18px;
+    cursor: pointer;
+    float: left;
+}
+
+.btn-group .button:hover {
+    border:2px solid blue;	
+	border-radius:2px;
+	color:blue;
+}
+.BRAND{
+font-family:arial;
+font-size:25px;
+}
+table.tab3
+{
+    border: 1px solid black;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100px;
+  position:ABSOLUTE;
+  TOP:85PX;
+  LEFT:20PX;
+  margin: auto;
+}
+#dots
+{
+position:absolute;
+top:400px;
+left:690px;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 2px;
+  align:center;
+  background-color: black;
+  border-radius: 100%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: blue;
+}
+#line
+{
+position:absolute;
+top:80px;
+left:260px;
+}
+ul{
+list-style-type:none;
+}
+li
+{
+margin:06px;
+}
+li a{
+text-decoration:none;
+color:#fff;
+padding:15px;
+}
+.btn-theme
+{
+color:#fff;
+background-color:#333;
+border-radius:8px;
+width:180px;
+}
+.btn-theme:hover,
+.btn-theme:active,
+.btn-theme:focus
+{
+
+background-color:#000;
+}
+#line1
+{
+position:absolute;
+top:130px;
+left:10px;
+
+}
+hr
+{background-color:blue;
+}
+.FEAT-PHN {
+POSITION:ABSOLUTE;
+TOP:550PX;
+LEFT:330PX;
+}
+
+.News {
+    POSITION:ABSOLUTE;
+TOP:450PX;
+LEFT:480PX;
+}
+.news1 {
+
+	background-image: url(news1.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 500px;
+    height: 700px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:450PX;
+	LEFT:30PX;
+}
+.news1:hover {
+    background-size: 400px;
+}
+.news2 {
+
+	background-image: url(news2.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 500px;
+    height: 700px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:450PX;
+	LEFT:400PX;
+}
+.news2:hover {
+    background-size: 400px;
+}
+.news3 {
+
+	background-image: url(news3.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 500px;
+    height: 700px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:450PX;
+	LEFT:800PX;
+}
+.news3:hover {
+    background-size: 400px;
+}
+.news4 {
+
+	background-image: url(news4.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 500px;
+    height: 700px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:1000PX;
+	LEFT:30PX;
+}
+.news4:hover {
+    background-size: 400px;
+}
+.news5 {
+
+	background-image: url(news5.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 500px;
+    height: 700px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:1000PX;
+	LEFT:400PX;
+}
+.news5:hover {
+    background-size: 400px;
+}
+.news6 {
+
+	background-image: url(news6.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 500px;
+    height: 700px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:1000PX;
+	LEFT:800PX;
+}
+.news6:hover {
+    background-size: 400px;
+}
+</style>
+<!--Start of Tawk.to Script-->
+
+<!--End of Tawk.to Script-->
+</head>
+
+<body>
+<div id="header">
+<img id="logo" src="logo.png" width="100" height="40">
+<div id="header_right"> 
+<table class="tab2">
+<tr>
+<td>
+<div class="btn-group">
+  <a href="contact.html"><button class="button">Contact Us</button></a>
+  <a href="about.html"><button class="button">About Us</button></a>
+  <a href="admission.html"><button class="button">Admissions</button></a>
+  <a href="placement.html"><button class="button">Placements</button></a>
+  <a href="job.html"><button class="button">Jobs</button></a>
+  <a href="happening.html"><button class="button">Happenings</button></a>
+  </div>
+
+</form>
+</table>
+</div>
+</div>
+
+<div class="slideshow-container">
+<div class="mySlides" style="width:1300px; height: 300px;">
+  <img src="LPU1.jpg" style="width:100%; height:300px;"> 
+</div>
+<div class="mySlides" style="width: 1300px; height: 300px;">
+  <img src="lpu2.jpg" style="width:100%; height:300px;">
+</div>
+<div class="mySlides" style="width: 1300px; height: 300px;">
+  <img src="lpu3.jpg" style="width:100%; height:300px;">
+</div>
+<div class="mySlides" style="width: 1300px; height: 300px;">
+  <img src="lpu4.jpg" style="width:100%; height:300px;">
+</div>
+</div>
+<div id="dots">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>   
+
+</div>
+
+<script>
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5dedfd88d96992700fcb6308/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+<DIV CLASS="News">
+<P><H1>Latest News About University</H1></P>
+</DIV>
+<a  class="news1" ></a><a  class="news2" ></a><a  class="news3" ></a><a  class="news4" ></a><a  class="news5" ></a><a  class="news6" ></a>
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+
+
+<!--<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h2><b>Chat With Enlight</b></h2>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>-->
+
+</body>
+
+</html>
