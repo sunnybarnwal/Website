@@ -1,0 +1,415 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+<link rel="shortcut icon" href="F:\IMG_20170224_125626.jpg"  type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table.tab1
+{
+border-collapse:collapse;
+border: 1px solid
+}
+table.tab1 th
+{
+border-collapse:collapse;
+color:#F0F8FF;
+border: 1px solid
+}
+body {
+background-color:white;
+width:100%;
+text:white;
+
+}
+
+#header{
+background-color:white;
+}
+#logo {
+margin:10px;
+position:relative;
+left:5px;
+}
+#header_right {
+text-color:white;
+position:absolute;
+top:23px;
+left:370px;
+
+}
+.sfield{
+ background-color:white;  
+    border-color:white;
+    border-style:solid;
+	border-radius:04px;
+    height:35px;
+    
+}
+.sbutton{
+background-color:#d915157;
+    height:inherit;
+    border: 1px solid #d91515;  
+    color:#fff;
+    position:relative;
+    margin: 0;
+    height:35px;
+	border-radius:04px;
+	}
+.btn-group .button {
+    background-color:white; 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+
+    display: inline-block;	
+    font-size: 18px;
+    cursor: pointer;
+    float: left;
+}
+
+.btn-group .button:hover {
+    border:2px solid blue;	
+	border-radius:2px;
+	color:blue;
+}
+.BRAND{
+font-family:arial;
+font-size:25px;
+}
+table.tab3
+{
+    border: 1px solid black;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100px;
+  position:ABSOLUTE;
+  TOP:85PX;
+  LEFT:20PX;
+  margin: auto;
+}
+#dots
+{
+position:absolute;
+top:400px;
+left:690px;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 2px;
+  align:center;
+  background-color: black;
+  border-radius: 100%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: blue;
+}
+#line
+{
+position:absolute;
+top:80px;
+left:260px;
+}
+ul{
+list-style-type:none;
+}
+li
+{
+margin:06px;
+}
+li a{
+text-decoration:none;
+color:#fff;
+padding:15px;
+}
+.btn-theme
+{
+color:#fff;
+background-color:#333;
+border-radius:8px;
+width:180px;
+}
+.btn-theme:hover,
+.btn-theme:active,
+.btn-theme:focus
+{
+
+background-color:#000;
+}
+#line1
+{
+position:absolute;
+top:130px;
+left:10px;
+
+}
+hr
+{background-color:blue;
+}
+.FEAT-PHN {
+POSITION:ABSOLUTE;
+TOP:550PX;
+LEFT:330PX;
+}
+
+.star {
+    background-image: url(suggest1.png);
+	
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:480PX;
+	LEFT:550PX;
+}
+.star:hover {
+    background-size: 250px;
+}
+.star1 {
+
+	background-image: url(suggest2.png);
+    background-size: 180px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:480PX;
+	LEFT:750PX;
+}
+.star1:hover {
+    background-size: 230px;
+}
+.star2 {
+
+	background-image: url(suggest3.png);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:480PX;
+	LEFT:950PX;
+}
+.star2:hover {
+    background-size: 250px;
+}
+.star3 {
+
+	background-image: url(suggest4.png);
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:480PX;
+	LEFT:1150PX;
+}
+.star3:hover {
+    background-size: 170px;
+}
+.FEAT {
+POSITION:ABSOLUTE;
+TOP:550PX;
+LEFT:350PX;
+}
+.love{
+position:absolute;
+top:900px;
+left:330px;
+}
+.love1 {
+
+	background-image: url(love.png);
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:800PX;
+	LEFT:1150PX;
+}
+.love1:hover {
+    background-size: 190px;
+}
+.love2 {
+
+	background-image: url(love3.png);
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:800PX;
+	LEFT:950PX;
+}
+.love2:hover {
+    background-size: 190px;
+}
+.love3 {
+
+	background-image: url(love4.png);
+    background-size: 170px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:800PX;
+	LEFT:750PX;
+}
+.love3:hover {
+    background-size: 210px;
+}
+.love4 {
+
+	background-image: url(love5.png);
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:800PX;
+	LEFT:550PX;
+}
+.love4:hover {
+    background-size: 190px;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 1200px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+</style>
+</head>
+<title>LPU</title>
+<body>
+<div id="header">
+<a href="page1.html"><img id="logo" src="logo.png" width="100" height="40"></a>
+<div id="header_right"> 
+<table class="tab2">
+<tr>
+<td>
+<div class="btn-group">
+  <a href="contact.html"><button class="button">Contact Us</button></a>
+  <a href="aboutlpu.html"><button class="button">About Us</button></a>
+  <a href="admission.html"><button class="button">Admissions</button></a>
+  <a href="place.html"><button class="button">Placements</button></a>
+  <a href="login.html"><button class="button">Jobs</button></a>
+  <a href="happening.html"><button class="button">Happenings</button></a>
+  </div>
+
+</form>
+</table>
+</div>
+</div>
+
+<div class="slideshow-container">
+<div class="mySlides" style="width:1300px; height: 300px;">
+  <img src="en-news-18554188-LPU-campus.jpg" style="width:100%; height:300px;"> 
+</div>
+<h1>ABOUT</h1>
+<div class="flex-container">
+  <div>
+Lovely Professional University (LPU) is a Private University situated on the outskirts of Jalandhar, Punjab. 
+It is the largest single-campus university in India, 
+with more than 30,000 students, over 4000 faculties and staff, offering more than 200 programmes. 
+Recognized by UGC and is also a member of AIU.
+<p>
+The university is ranked high on various parameters by acclaimed bodies and is a recipient of 
+various awards including the Best Private University Award by ASSOCHAM again in 2017, presented 
+by Sh. Prakash Javadekar Union Minister of HRD, Govt. of India. NIRF 2018 (MHRD Government of India) 
+has ranked LPU No. 2 in management on Outreach and Inclusivity parameter and ranked 38th overall. 
+With internationally benchmarked curricula, innovative pedagogy, experiential learning,
+ and 200+ foreign tie-ups for equitable and affordable quality education, the University 
+are poised to establish itself as a Centre of Excellence in Research.</p>
+<img src="bal.jpg" alt="founder of lovely group" width="460" height="345">
+
+</div>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html>
