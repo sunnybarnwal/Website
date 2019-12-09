@@ -1,0 +1,488 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+<link rel="shortcut icon" href="F:\IMG_20170224_125626.jpg"  type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table.tab1
+{
+border-collapse:collapse;
+border: 1px solid
+}
+table.tab1 th
+{
+border-collapse:collapse;
+color:#F0F8FF;
+border: 1px solid
+}
+body {
+background-color:white;
+width:100%;
+text:white;
+
+}
+
+#header{
+background-color:white;
+}
+#logo {
+margin:15px;
+position:relative;
+left:10px;
+}
+#header_right {
+text-color:white;
+position:absolute;
+top:23px;
+left:370px;
+
+}
+.sfield{
+ background-color:white;  
+    border-color:white;
+    border-style:solid;
+	border-radius:04px;
+    height:35px;
+    
+}
+.sbutton{
+background-color:#d915157;
+    height:inherit;
+    border: 1px solid #d91515;  
+    color:#fff;
+    position:relative;
+    margin: 0;
+    height:35px;
+	border-radius:04px;
+	}
+.btn-group .button {
+    background-color:white; 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+
+    display: inline-block;	
+    font-size: 18px;
+    cursor: pointer;
+    float: left;
+}
+
+.btn-group .button:hover {
+    border:2px solid blue;	
+	border-radius:2px;
+	color:blue;
+}
+.BRAND{
+font-family:arial;
+font-size:25px;
+}
+table.tab3
+{
+    border: 1px solid black;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100px;
+  position:ABSOLUTE;
+  TOP:85PX;
+  LEFT:20PX;
+  margin: auto;
+}
+#dots
+{
+position:absolute;
+top:400px;
+left:690px;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 2px;
+  align:center;
+  background-color: black;
+  border-radius: 100%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: blue;
+}
+#line
+{
+position:absolute;
+top:80px;
+left:260px;
+}
+ul{
+list-style-type:none;
+}
+li
+{
+margin:06px;
+}
+li a{
+text-decoration:none;
+color:#fff;
+padding:15px;
+}
+.btn-theme
+{
+color:#fff;
+background-color:#333;
+border-radius:8px;
+width:180px;
+}
+.btn-theme:hover,
+.btn-theme:active,
+.btn-theme:focus
+{
+
+background-color:#000;
+}
+#line1
+{
+position:absolute;
+top:130px;
+left:10px;
+
+}
+hr
+{background-color:blue;
+}
+.FEAT-PHN {
+POSITION:ABSOLUTE;
+TOP:550PX;
+LEFT:330PX;
+}
+
+.star {
+    background-image: url(suggest1.png);
+	
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:480PX;
+	LEFT:550PX;
+}
+.star:hover {
+    background-size: 250px;
+}
+.star1 {
+
+	background-image: url(suggest2.png);
+    background-size: 180px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:480PX;
+	LEFT:750PX;
+}
+.star1:hover {
+    background-size: 230px;
+}
+.star2 {
+
+	background-image: url(suggest3.png);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:480PX;
+	LEFT:950PX;
+}
+.star2:hover {
+    background-size: 250px;
+}
+.star3 {
+
+	background-image: url(suggest4.png);
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:480PX;
+	LEFT:1150PX;
+}
+.star3:hover {
+    background-size: 170px;
+}
+.FEAT {
+POSITION:ABSOLUTE;
+TOP:550PX;
+LEFT:350PX;
+}
+.love{
+position:absolute;
+top:900px;
+left:330px;
+}
+.love1 {
+
+	background-image: url(love.png);
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:800PX;
+	LEFT:1150PX;
+}
+.love1:hover {
+    background-size: 190px;
+}
+.love2 {
+
+	background-image: url(love3.png);
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:800PX;
+	LEFT:950PX;
+}
+.love2:hover {
+    background-size: 190px;
+}
+.love3 {
+
+	background-image: url(love4.png);
+    background-size: 170px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:800PX;
+	LEFT:750PX;
+}
+.love3:hover {
+    background-size: 210px;
+}
+.love4 {
+
+	background-image: url(love5.png);
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-size 0.5s;
+	display: inline-block;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+	POSITION:ABSOLUTE;
+	TOP:800PX;
+	LEFT:550PX;
+}
+.love4:hover {
+    background-size: 190px;
+}
+#start{
+padding-top:25%;
+}.flex-container {
+  display: flex;
+  
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+</style>
+</head>
+<title>PLACEMENT</title>
+<body>
+<div id="header">
+<a href="page1.html"><img id="logo" src="logo.png" width="100" height="40"></a>
+<div id="header_right"> 
+<table class="tab2">
+<tr>
+<td>
+<div class="btn-group">
+  <a href="contact.html"><button class="button">Contact Us</button></a>
+  <a href="aboutlpu.html"><button class="button">About Us</button></a>
+  <a href="admission.html"><button class="button">Admissions</button></a>
+  <a href="place.html"><button class="button">Placements</button></a>
+  <a href="login.html"><button class="button">Jobs</button></a>
+  <a href="happening.html"><button class="button">Happenings</button></a>
+  </div>
+
+</form>
+</table>
+</div>
+</div>
+
+<div class="slideshow-container">
+<div class="mySlides" style="width:1300px; height: 300px;">
+  <img src="LPU1.jpg" style="width:100%; height:300px;"> 
+</div>
+<div class="mySlides" style="width: 1300px; height: 300px;">
+  <img src="lpu2.jpg" style="width:100%; height:300px;">
+</div>
+<div class="mySlides" style="width: 1300px; height: 300px;">
+  <img src="lpu3.jpg" style="width:100%; height:300px;">
+</div>
+<div class="mySlides" style="width: 1300px; height: 300px;">
+  <img src="lpu4.jpg" style="width:100%; height:300px;">
+</div>
+</div>
+<div id="dots">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>   
+</div>
+
+<center>
+<h1 id="start">ABOUT PLACEMENT</h1></center>
+<div class="flex-container">
+  <div> <h2>Recent NEWS</h2>
+<img src="amazon.jpg" alt="Amazon" width="700" height="300">
+<p>1.Amazon offers 3 students a record Rs. 28 lakh package + 28 students offered internships!</p>
+<img src="google.jpg" alt="Amazon" width="700" height="300">
+<p>2.LPU alumni, Utkarsh, placed at Google HQs in Silicon Valley Rs. 1Cr.+ package!</p>
+<img src="vmware.jpg" alt="Amazon" width="700" height="300">
+<p>3.9 B. Tech CSE/IT students placed in VMware</p>
+<img src="lpu4.jpg" alt="Amazon" width="700" height="300">
+<p>4.Cognizant hires over 1800 LPU students in recent years</p>
+<img src="practo.jpg" alt="Amazon" width="700" height="300">
+<p>5.Startups like Practo and Think & Learn offer dream packages over Rs. 5-10 Lakh</p>
+</div>
+  <div><h2>COMPANIES VISITING</h2> 
+1.Amazon India<br>
+2.Cognizant Technology Solutions<br>
+3.Air Vistara<br>
+4.Urban Pitara<br>
+5.Hamilton Land Developers Pvt. Ltd.<br>
+6.Crimson Interactive Pvt. Ltd.<br>
+7.Om Careers<br>
+8.Cactus Communications Pvt. Ltd.<br>
+9.Aktiv Health<br>
+10.Ids Infotech Limited<br>
+11.Freyr Solutions<br>
+12.Dr Lal Path Lab<br>
+13.Vlcc Health Care Ltd.<br>
+14.Health Care At Home<br>
+15.Recoup<br>
+16.Portea Clinics<br>
+17.Ivy Hospitals<br>
+18.Uppal Neuro Care Hospital<br>
+19.Max Super Specialty Hospital<br>
+20.Healthcare At Home<br>
+21.Air Vistara<br>
+22.Urban Pitara<br>
+23.Ids Infotech Limited<br>
+24.Vlcc Health Care Ltd.<br>
+25.Ivy Hospitals<br>
+26.Convergys India Services Private Limited<br>
+27.Genpact Ltd. (Gecis)<br>
+28.Omics International Pvt. Ltd.<br>
+29.Capitalaim Financial Advisory Pvt. Ltd.<br>
+30.Healthifyme Wellness Products & Services Pvt. Ltd.<br>
+31.The Diet Xperts<br>
+32.British Biologicals<br>
+33.Paras Nutrition Pvt. Ltd.<br>
+34.Club Mahindra<br>
+35.Dharam Consulting<br>
+36.Wtvision<br>
+37.Apdc<br>
+38.Total Environment<br>
+39.Anagram Architects<br>
+40.Ardent Architects<br>
+41.Fountain Head<br>
+42.Wagma Design <br>
+43.Isbe Consulting Inc.<br>
+44.Sagar Constructions<br>
+45.Design Forum International<br>
+46.4 Line Architects<br>
+47.Omar Moujaes Architect<br>
+48.Habitat Architects<br>
+49.Architect Hafeez Contractor<br>
+50.Vastunidhi Architects<br>
+51.Studio Kia<br>
+52.L’vista<br>
+53.Hemant Vora & Associates<br>
+54.Green Vision Architects<br>
+55.Al Rakha Group<br>
+</div>
+</div>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</a>
+
+
+</body>
+</html>
+ 
